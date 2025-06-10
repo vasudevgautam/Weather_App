@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="/app1/weather-2019-02-07.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="app">
+   
+    <div class="nav">
+      <button class="temp">
+    <div class="toggle">
+      <label><input type="checkbox" id="unitToggle" onchange="toggleUnits()"> <span id="unitLabel">°C</span></label>
+    </div> <medium>
+     °C </medium></button>
+     <button class="theme">
+    <div class="mode-toggle">
+   <label> 
+    <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+    <span id="modeLabel">Light</span>
+   </label>
+   </div>
+   <medium>Theme</medium></button>
+   </div>
+ <h1>🌤️ Weather App</h1>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button  onclick="getWeatherByCity()">Search</button>
+      <button onclick="getWeatherByCoords()" class="btn"><i class='fas fa-map-marker-alt' style='color:rgba(253, 3, 3, 0.7)'></i> Current Location</button>
+    </div>
+       <h4 id="heading">Recent Searches</h4>
+    <div class="history" id="history"></div>
+   <button class="clear_btn" onclick="deleteItem()" id="clearButton">Clear</button>
+    <div class="loader" id="loader"></div>
+    <p id="coordinate"></p>
+    <div class="weather-info" id="weatherInfo"><p id="show"></p></div>
+    
+
+    <h3>📅 5-Day Forecast</h3>
+    <div class="forecast" id="forecast"></div>
+   
+   
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
