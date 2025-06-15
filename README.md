@@ -10,7 +10,7 @@ A modern, responsive weather application built using **HTML**, **CSS**, and **Ja
 - 🔄 Loading animations
 - 💾 Local storage for recent searches
 
-> ✅ Deployed via [GitHub Pages](https://vasudevgautam.github.io/weather-app/)
+> ✅ Deployed via [GitHub Pages](https://vasudevgautam.github.io/Weather_App/)
 
 ---
 
